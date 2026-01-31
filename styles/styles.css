@@ -195,10 +195,8 @@ body{
 /* SECTION STYLES**/
 .mainlef{
     height: 500px;
-   /*width: 60%;*/
     padding: 44px;
-    margin: 40px;
-  /*margin-left: 5%;*/
+    margin: 40px 10px;
     text-align: center;
     background-color: rgb(48, 19, 75);
     background: 
@@ -918,6 +916,7 @@ button[type="submit"]:hover {
 
 }
 /**END OF SCREEN SIZE STYLES**/
+
 
 
 

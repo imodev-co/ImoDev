@@ -196,7 +196,7 @@ body{
 .mainlef{
     height: 500px;
     padding: 44px;
-    margin: 40px 10px;
+    margin: 40px 8px;
     text-align: center;
     background-color: rgb(48, 19, 75);
     background: 
@@ -916,6 +916,7 @@ button[type="submit"]:hover {
 
 }
 /**END OF SCREEN SIZE STYLES**/
+
 
 
 

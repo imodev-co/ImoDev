@@ -1,0 +1,636 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ImoDev</title>
+    
+    <link rel="stylesheet" href="assets/fontawesome-free-6.6.0-web/css/all.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link rel="stylesheet" href="styles/legal.css">
+    
+</head>
+<body>
+<!---Scroll Progress---->>
+<div id="progress-bar"></div>
+<!--HEADER CODES--->
+<div class="header" id="header">
+    <div class="lef">
+        <img src="images/imodevlogo.4.png" alt="logo">
+        <span>ImoDev</span>
+    </div>
+
+    <!-- The menu icon (only visible on mobile) -->
+    <button class="mobile-menu-btn" onclick="toggleMenu()" aria-label="Toggle menu">
+        <i class="fas fa-bars" id="barIcon"></i>
+        <i class="fas fa-xmark" id="closeIcon" style="display: none;"></i>
+    </button>
+
+
+    <div class="righ" id="navLinks">
+        <div class="nav-links">
+            <nav>
+                <a href="index.html">
+                    Home
+                </a>
+            </nav>
+            <nav>
+                <a href="services.html">Services</a>
+            </nav>
+            <nav class="an">
+                <a href="about.html" style="background-color: whitesmoke; color: #011331; padding: 4px; border-radius: 5px;">About</a>
+            </nav>
+            <nav>
+                <a href="announcements.html">Updates</a>
+            </nav>
+        </div>
+        <div class="theme">
+            <div class="navlink">
+                <a href="requestform.html">
+                    Get Started
+                </a> 
+            </div>
+            <h5>CONNECT </h5>
+            <ul>
+            <li>
+                <i class="fas fa-envelope"></i>
+                <a href="mailto:imodev.info@gmail.com?subject=Services%20Request&body=Please%20describe%20your%20request%20here..">
+                    Email Us!
+                </a>
+            </li>
+            <li>
+                <i class="fas fa-phone-volume"></i>
+                <a href="tel:+233554678732">(+233)55 467 8732</a>
+            </li>
+            <li>
+                <i class="fas fa-location-dot"></i>
+                <p>Accra - Ghana</p>
+            </li>
+            </ul>
+        </div>
+    </div>
+</div>
+
+<!--SECTION CODES--->
+<section>
+    <div class="legal-container">
+        <div class="legal-tabs">
+            <button class="tab-btn active" onclick="openTab(event, 'policy')"><i class="fas fa-user-shield"></i> Privacy</button>
+            <button class="tab-btn" onclick="openTab(event, 'terms')"><i class="fas fa-file-contract"></i> Terms</button>
+            <button class="tab-btn" onclick="openTab(event, 'license')"><i class="fas fa-certificate"></i> License</button>
+        </div>
+
+        <div class="legal-content">
+            <span class="date">Last Updated: January 2026</span>
+
+            <!-- Privacy Policy -->
+            <div id="policy" class="tab-panel active">
+                <h2>Privacy Policy</h2>
+                <p>
+                    At ImoDev, your privacy is important to us. It is our policy to respect your privacy regarding any information we may collect across our website.
+                    This Privacy Policy outlines our practices regarding the collection, use, and protection of your personal information. 
+                </p>
+                <ol>
+                    <li>
+                        <strong>Data Collection:</strong> 
+                        We only ask for personal information when we truly need it to provide a service to you.
+                        <ul>
+                            <li>
+                               Contact Information: Name, email address, phone number, company name 
+                            </li>
+                            <li>
+                                 Project Details: Information about your project, budget, and timeline preferences  
+                            </li>
+                            <li>
+                                Usage Information: Pages visited, time spent on site, links clicked, and referral sources 
+                            </li>
+                            <li>
+                                 Device Information: Browser type, IP address, operating system, and device identifiers 
+                            </li>
+                            <li>
+                                 Communication Data: Messages sent through contact forms or customer support 
+                            </li>
+                        </ul>
+                    </li>
+                    <li>
+                        <strong>Data Usage:</strong> 
+                            We use the information we collect to: Provide, maintain, and improve our services 
+                            Respond to your inquiries and customer support requests 
+                            Send marketing communications (with your consent) 
+                            Analyze usage patterns to enhance user experience 
+                            Detect and prevent fraudulent activity and security breaches 
+                            Comply with legal obligations 
+                            Conduct research and analytics 
+
+                    </li>
+                    <li>
+                        <strong>Data Storage & Security:</strong> 
+                           <h5>
+                            ImoDev implement comprehensive security measures to protect your personal information: 
+                           </h5> 
+                           <ul>
+                               <li>
+                                   All data is encrypted using industry-standard SSL/TLS protocols 
+                               </li>
+                               <li>
+                                   Access to personal data is restricted to authorized personnel 
+                               </li>
+                               <li>
+                                   We maintain secure servers with regular security audits 
+                               </li>
+                               <li>
+                                   We use secure authentication mechanisms 
+                               </li>
+                               <li>
+                                   Regular backups are performed to prevent data loss 
+                               </li>
+                           </ul>
+                            Note: While we strive to protect your information, no security system is completely impenetrable. We cannot guarantee absolute security. 
+
+                    </li>
+                    <ll>
+                        <strong>Cookies & Tracking Technologies:</strong>
+                             We use cookies and similar tracking technologies to:
+                           <ul>
+                               <li>
+                                   Remember your preferences and login information 
+                               </li>  
+                               <li>
+                                   Track your browsing behavior for analytics purposes 
+                               </li>  
+                               <li>
+                                   Personalize your experience 
+                               </li>  
+                               <li>
+                                   Deliver targeted advertising 
+                               </li>  
+                           </ul>
+                             You can control cookies through your browser settings. However, disabling cookies may affect certain website functionality. 
+                    </ll>
+
+                    <ll>
+                        <strong>Third Parties:</strong>
+                            We may use third-party services that have access to your information: 
+                            <ul>
+                                <li>
+                                    Analytics: Google Analytics to understand site usage 
+                                </li>
+                                <li>
+                                    Monitoring: Hotjar for user behavior analysis 
+                                </li>
+                                <li>
+                                    Cloud Services: Third-party hosting providers 
+                                </li>
+                                <li>
+                                    Payment Processors: For processing transactions securely .
+                                </li>
+                            </ul>
+
+                            These third parties are contractually obligated to use your information only as necessary to provide services to us.
+
+                    </ll>
+                    <li>
+                        <strong>Data Retention:</strong>
+                             We retain your personal information for as long as necessary to provide our services and fulfill the purposes outlined in this policy. Specifically: 
+                            Contact information is retained for 3 years after last interaction  
+                            User activity logs are retained for 12 months 
+                            Legal and compliance records are retained as required by law 
+                            You may request deletion of your data at any time 
+
+                    </li>
+                    <li>
+                        <strong>Your Rights and Choices :</strong>
+                            Depending on your location, you may have the following rights: 
+ 
+                            Right to Access: Request a copy of your personal data 
+                            Right to Rectification: Correct inaccurate information
+                            Right to Erasure: Request deletion of your data ("Right to be Forgotten")
+                            Right to Restrict Processing: Limit how we use your information  Right to Data Portability: Receive your data in a portable format
+                            Right to Object: Opt-out of marketing communications
+
+                    </li>
+                    <li>
+                        <strong>Marketing Communications </strong>
+                            We may send you marketing emails about our services. You can opt-out at any time by: 
+ 
+                            Clicking the unsubscribe link in any email.
+                            Updating your preferences in your account settings. <br> 
+                            Contacting us directly at privacy @ imodev.info@gmail.com 
+
+                    <li>
+                        <strong>Contact Us:</strong>
+                            If you have questions about this Privacy Policy or our privacy practices, please contact us:
+                            <ul>
+                                <li>
+                                    ImoDev Privacy Team 
+                                </li>
+                                <li>
+                                    Email: Imodev.info@gmail.com  
+                                </li>
+                                <li>
+                                    Phone: +233 (554) 678-732 
+                                </li>
+                                <li>
+                                    Address: Weija District, Mandela 1100 
+                                </li>
+                                <p>
+                                    Response Time: Within 30 days of receipt 
+
+                                </p>
+                            </ul>
+                    </li>
+                    <div>
+                        <strong>ImoDev</strong>
+                               <p>
+                                   Empowering businesses with cutting-edge web technologies. 
+                               </p>
+                    </div>
+                </ol>
+            </div>
+
+            <!-- Terms of Service -->
+            <div id="terms" class="tab-panel">
+                <h2>Terms of Service</h2>
+                <p>
+                     These Terms of Service ("Terms") govern your use of ImoDev website, services, and products. By accessing or using our services, you agree to be bound by these terms. 
+                </p>
+                <ol>
+                    <li>
+                        <strong>Service Description </strong> 
+                        ImoDev ("Company," "we," "us," "our") provides web development, custom web applications, IT consulting, and technology solutions ("Services").  
+                        Our services include: 
+                        <ul>
+                            <li>
+                                Custom website development and design 
+                            </li>
+                            <li>
+                                Web application development 
+                            </li>
+                            <li>
+                                IT consulting and technical strategy 
+                            </li>
+                            <li>
+                                Digital transformation services 
+                            </li>
+                            <li>
+                                Software products & templates 
+                            </li>
+                            <li>
+                                Technical support & maintenance
+                            </li>                                 
+                        </ul>
+
+                    </li>
+                    <li>
+                        <strong>Eligibility and Account Registration</strong> 
+                         By using our Services, you represent and warrant that: 
+                        
+                        You are at least 18 years old and have the legal authority to enter into these Terms. 
+                        All information provided is accurate and complete.
+                        You are not prohibited by law from using our Services.
+                        You will not use our Services for any illegal or unauthorized purpose. 
+                        You are responsible for maintaining the confidentiality of your login credentials and all activities under your account. 
+
+                    </li>
+                    <li>
+                        <strong>Limitations:</strong> 
+                        In no event shall we be liable for any damages arising out of the use or inability to use the materials.
+                    </li>
+                    <li>
+                        <strong>Payment Terms</strong> 
+                        Payment terms are project-specific and outlined in individual service agreements or quotes. Unless otherwise stated: 
+ 
+                        Invoices are due within 30 days of issuance.
+                        Late payments accrue interest at 1.5% per month.
+                        We accept major credit cards, bank transfers, and other payment methods as specified.
+                        Refund policies are detailed in project-specific agreements.
+                        Recurring services may be billed monthly or annually.
+                    </li>
+                    <li>
+                        <strong>Intellectual Property Rights</strong> 
+                        <ul>
+                            <li>
+                                5.1	Company Content
+                                <p>
+                                    All content on our website, including text, graphics, logos, images, software, and design elements, is owned by ImoDev or licensed from third parties. You may not reproduce, distribute, or transmit this content without prior written consent. 
+                                </p>
+                            </li>
+                            <li>
+                                5.2	Client Work 
+                                <p>
+                                     Upon full payment, intellectual property rights for custom development work transfer to the Client as specified in the project agreement. Third-party components, libraries, and open-source software retain their original licenses. 
+                                </p>
+                            </li>
+                            <li>
+                                5.3	Pre-Built Products  
+                                <p>
+                                      Pre-built templates and products are licensed for use by the purchaser. You may not resell or redistribute these products without explicit permission. 
+                                </p>
+                            </li>
+                        </ul>
+                    </li>
+                    <li>
+                        <strong>Changes to Terms</strong> 
+                         We may update these Terms at any time. Continued use of our Services constitutes acceptance of updated Terms. We will notify you of material changes via email or by posting on our website. 
+                  
+                </ol>
+            </div>
+
+            <!-- License Info -->
+            <div id="license" class="tab-panel">
+                <h2>Licensing</h2>
+                <p>Standard Commercial License</p>
+                <div style="background: rgba(0,0,0,0.05); padding: 20px; border-radius: 8px; border-left: 4px solid var(--accent-color);">
+                    Copyright &copy; 2023. All Rights Reserved. 
+                    <br><br>
+                    This software and associated documentation files are protected by international copyright laws. Unauthorized reproduction or distribution is strictly prohibited. <br>
+                    This page documents are open-source and third-party licenses used in ImoDev products and services. We are committed to respecting and complying with all applicable open-source licenses. 
+
+                    <ol>
+                        <li>
+                            <strong> Frontend Frameworks & Libraries </strong>
+                                <h3> Tailwind CSS </h3>
+                                <h3> MIT License </h3>
+                                <p>
+                                    Tailwind CSS is a utility-first CSS framework licensed under the MIT License. You are free to use it in commercial and private projects.
+                                </p>
+                                <a href="#">View full License</a>
+
+                                <h3>Font Awesome  </h3>
+                                <h3>CC BY 4.0 & MIT License</h3>
+                                <p>
+                                    Font Awesome icons are provided under the Creative Commons Attribution 4.0 International (CC BY 4.0) license for the free version, with MIT license options for commercial use. Attribution is required for free icon usage.
+                                </p>
+                                <a href="#">View full License</a>
+                                
+                                <h3>Google Fonts </h3>
+                                <h3>Open Font License</h3>
+                                <p>
+                                    Google Fonts are free and open-source, licensed under the SIL Open Font License (OFL). They can be freely used in both commercial and personal projects. <br>
+                                <a href="#">View Library</a>
+                        </li>
+                        <li>
+                            <strong>Third-Party Services </strong>   
+                                <ul>
+                                    <li>
+                                        <h3>
+                                            Google Analytics 
+                                        </h3>
+                                        <p>
+                                             Analytics service governed by Google's Terms of Service. Data collection and usage follows their Privacy Policy and applicable data protection laws.
+                                        </p>
+                                    </li>
+                                    <li>
+                                        <h3>Hotjar</h3>
+                                        <p>
+                                             User behavior analytics service. Usage governed by Hotjar's Terms of Service and Privacy Policy. GDPR compliant. 
+                                        </p>
+                                    </li>
+                                </ul> 
+                        </li>
+                        <li>
+                            <strong>Database & Data Storage</strong>   
+                                <ul>
+                                    <li>
+                                        <h3>
+                                             MongoDB (Community Edition)  
+                                        </h3>
+                                        <p>
+                                            MongoDB Community Edition is licensed under the Server Side Public License (SSPL). Provides free usage with specific commercial terms. 
+                                        </p>
+                                    </li>
+                                    <li>
+                                        <h3>PostgreSQL </h3>
+                                        <p>
+                                              PostgreSQL is released under the PostgreSQL License, which is similar to BSD license. Free for commercial and non-commercial use. 
+                                        </p>
+                                    </li>
+                                </ul> 
+                        </li>
+                        <li>
+                            <strong>Development Tools </strong>   
+                                <ul>
+                                    <li>
+                                        <h3>
+                                            Visual Studio Code (Extensions) 
+                                        </h3>
+                                        <p>
+                                            Development extensions used are open-source and licensed under MIT or compatible licenses.  
+                                        </p>
+                                    </li>
+                                    <li>
+                                        <h3>Git & GitHub </h3>
+                                        <p>
+                                              Git is licensed under GPLv2. GitHub Terms of Service govern repository hosting.
+                                    </li>
+                                </ul> 
+                        </li>
+                        <li>
+                            <strong>CSS & Design Resources </strong>   
+                                <ul>
+                                    <li>
+                                        <h3>
+                                             Unsplash Images   
+                                        </h3>
+                                        <p>
+                                             High-quality stock photos used from Unsplash are free to use, even for commercial purposes, without asking permission or providing attribution. 
+                                        </p>
+                                    </li>
+                                    <li>
+                                        <h3>Dice Bear Avatars  </h3>
+                                        <p>
+                                               Avatar generation service providing avatars under MIT License. 
+                                        </p>
+                                    </li>
+                                </ul> 
+                        </li>
+                        <li>
+                            <strong>License Types Explained </strong>   
+                                <ul>
+                                    <li>
+                                        <h3>
+                                              MIT License    
+                                        </h3>
+                                        <p>
+                                              Permissive open-source license. Allows free use, modification, and distribution with minimal restrictions. Attribution is appreciated but not required. 
+                                        </p>
+                                    </li>
+                                    <li>
+                                        <h3> Apache 2.0 License </h3>
+                                        <p>
+                                             Permissive license with explicit patent rights. Can be freely used, modified, and distributed commercially. 
+                                        </p>
+                                    </li>
+                                    <li>
+                                        <h3> SSPL (Server Side Public License)  </h3>
+                                        <p>
+                                             MongoDB's proprietary license. Free for development and some commercial uses, with restrictions on offering as a service. 
+                                        </p>
+                                    </li>
+                                </ul> 
+                        </li>
+                        <li>
+                            <strong>Contact Us.</strong>   
+                               <ul>
+                                    <li>
+                                        Email: imodev.info@gmail.com  
+                                    </li>
+                                    <li>
+                                        Phone: +233 (555) 123-4567 
+                                    </li>
+                                    <li>
+                                        Address: Tech District, Suite 1100 
+                                    </li>
+                                    <p>
+                                        Response Time: Within 5 business days 
+                                    </p>
+
+                               </ul>
+                        </li>
+                    </ol>
+                </div>    
+            </div>
+        </div>
+    </div>
+
+</section>
+
+
+    <!--FOOTER CODES--->
+    <div class="footer">
+        <div class="lef">
+            <img src="images/imodevlogo.4.png" alt="logo">
+            <span>ImoDev</span>
+        </div>
+
+        <div class="trust">
+            <p>
+                Responsive website templates ready for brands and businesses
+            </p>
+        </div>
+        <div class="ads">
+            <p> 
+                Request for advertisements On all Our media platforms.
+            </p>
+            <ul>
+                <li>WhatsApp</li>
+                <li>Facebook Ads</li>
+                <li>Email/SMS Marketing</li>
+                <li>Content Marketing</li>
+            </ul>
+            <a href="ads.html">
+                Advertise with Us! 
+            </a>          
+        </div>
+
+        <div class="help">
+            <a href="mailto:imodev.info@gmail.com?subject=Support%20Request&body=Please%20describe%20your%20issue%20here..">
+                <i class="fa-solid fa-headset">
+                    Customer Support
+                </i>
+            </a>
+
+            <i class="fas fa-phone-volume">
+                +233554678732
+            </i>
+        </div>
+
+        <div class="legal">
+            <h3>Legal</h3>
+            <a href="legals.html">Privacy Policy</a>
+            <a href="legals.html">Terms Of Use</a>
+            <a href="legals.html">License</a>
+        </div>
+        
+        <div class="backs">
+            <div class="social">
+            <div class="s">
+                SOCIALS
+            </div>
+                <a href="https://wa.me/+233554678732"><i class="fa-brands fa-whatsapp"></i></a>
+                <a href="https://www.facebook.com/profile.php?id=100092258583707&mibextid=ZbWKwL"><i class="fa-brands fa-facebook"></i></a>
+                <a href="https://www.instagram.com/imodev1?igsh=MXN4N3B5N21xN2dpMA=="><i class="fa-brands fa-instagram"></i></a>
+                <a href="https://github.com"><i class="fa-brands fa-github"></i></a>
+            </div>
+            <div class="ft">
+                &copy; 2025 ImoDev
+            </div>
+        </div>
+    </div>
+
+<script>
+    document.addEventListener('DOMContentLoaded', () => {
+        const form = document.getElementById('contact-form');
+        const formStatus = documen.getElementById('form-status');
+
+        form.addEventListener('submit', async (event) => {
+            event.preventDefault();
+
+            const formData = new FormData(form);
+
+            try {
+                const response = await fetch(form.action, {
+                    method: 'POST',
+                    body: formData,
+                    headers: {
+                        'Accept': 'application/json'
+                    }
+                });
+
+                if(response.ok){
+                    formStatus.textContent = 'Thank you for your message! we will reply soon.';
+                    formStatus.style.color = 'green';
+                    form.reset();
+                } else {
+                    formStatus.textContent = 'Oops! There was a problem your message.';
+                    formStatus.style.color = 'red';
+                }
+            } catch (error) {
+                formStatus.textContent = 'Oops! Network error occured.';
+                formStatus.style.color = 'red';
+            }
+        });
+    });
+</script>  
+<script>
+    //TOGGLE MENU
+    function toggleMenu() {
+        const navLinks = document.getElementById("navLinks");
+        const barIcon = document.getElementById("barIcon");
+        const closeIcon = document.getElementById("closeIcon");
+
+        //TOGGLE THE LINK
+        navLinks.classList.toggle("active");
+
+        //SWITCH THE ICONS
+        if(navLinks.classList.contains("active")){
+            barIcon.style.display = "none";
+            closeIcon.style.display = "block";
+        } else{
+            barIcon.style.display = "block";
+            closeIcon.style.display = "none";
+        }
+        }           
+</script>
+<script>
+    function openTab(evt, tabName) {
+        const panels = document.querySelectorAll(".tab-panel");
+        const btns = document.querySelectorAll(".tab-btn");
+
+        panels.forEach(p => p.classList.remove("active"));
+        btns.forEach(b => b.classList.remove("active"));
+
+        document.getElementById(tabName).classList.add("active");
+        evt.currentTarget.classList.add("active");
+    }
+
+    // Reuse your Theme Logic
+    
+
+    document.querySelectorAll('input[name="theme"]').forEach(input => {
+        input.addEventListener('change', (e) => applyTheme(e.target.value));
+    });
+</script>          
+</body>
+</html>
+

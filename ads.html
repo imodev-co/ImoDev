@@ -1,0 +1,867 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>ImoDev</title>
+    
+    <link rel="stylesheet" href="assets/fontawesome-free-6.6.0-web/css/all.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link rel="stylesheet" href="styles/ad.css">
+    <link rel="stylesheet" href="styles/ads.css">
+    <!-- Load the PDF library -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/2.5.1/jspdf.umd.min.js"></script><script src="cdnjs.cloudflare.com"></script>
+
+</head>
+<body>
+    <!---Scroll Progress---->
+    <div id="progress-bar"></div>
+    <!--HEADER CODES--->
+    <div class="header" id="header">
+        <div class="lef">
+            <img src="images/imodevlogo.4.png" alt="logo">
+            <span>ImoDev</span>
+        </div>
+
+        <!-- The menu icon (only visible on mobile) -->
+        <button class="mobile-menu-btn" onclick="toggleMenu()" aria-label="Toggle menu">
+          <i class="fas fa-bars" id="barIcon"></i>
+          <i class="fas fa-xmark" id="closeIcon" style="display: none;"></i>
+        </button>
+
+
+        <div class="righ" id="navLinks">
+                <div class="nav-links">
+                <nav>
+                    <a href="index.html">
+                        Home
+                    </a>
+                </nav>
+                <nav>
+                    <a href="services.html">Services</a>
+                </nav>
+                <nav class="an">
+                    <a href="ads.html" style="background-color: whitesmoke; color: #011331; padding: 4px; border-radius: 5px;">Advert</a>
+                </nav>
+                <nav>
+                    <a href="announcements.html">Updates</a>
+                </nav>
+            </div>
+            
+            <div class="theme">
+               <div class="navlink">
+                    <a href="requestform.html">
+                        Get Started
+                    </a> 
+               </div>
+             <h5>CONNECT </h5>
+             <ul>
+                <li>
+                    <i class="fas fa-envelope"></i>
+                    <a href="mailto:imodev.info@gmail.com?subject=Services%20Request&body=Please%20describe%20your%20request%20here..">
+                        Email Us!
+                    </a>
+                </li>
+                <li>
+                    <i class="fas fa-phone-volume"></i>
+                    <a href="tel:+233554678732">(+233)55 467 8732</a>
+                </li>
+                <li>
+                    <i class="fas fa-location-dot"></i>
+                    <p>Accra - Ghana</p>
+                </li>
+             </ul>
+           </div>
+        </div>
+    </div>
+
+<!--SECTION CODES--->
+<section>
+    <!--ADS SECTION CODES--->
+    <div class="top-bar hero">
+        <h1>Boost Your Online Prensence</h1>
+        <p>
+            Reach out to millions of potential customers with our
+            network of website - competitive rates, targeted customers.
+        </p>
+        
+        <a href="#ads">Get Started!</a>
+    </div>
+
+    <!---ADS PLANS----->
+    <div class="p">
+        <span>PLANS</span>
+
+        <div class="a-tags">
+            <a href="#" class="mon-link">Monthly</a>
+
+            <a href="#" class="yea-link">Yearly</a>
+        </div>
+    </div>
+    <div class="plans plan-box">
+        <!---MONTHLY PLANS----->
+        <div class="form-box mon">  
+            <div class="mon" >
+                <div class="pl">
+                    <h4>BASIC</h4>
+                    <p>For specific pages only</p>
+                    
+                    <div class="price">
+                        <h5>¢107.20</h5> <span>/mo</span>
+                    </div>
+                    
+                    <div class="opt">
+                        <ul>
+                            <li><span>200</span> Reach</li>
+                            <li><span>1</span> Team member</li>
+                            <li><i class="fas fa-infinity"></i> Ad samples</li>
+                        </ul>
+                    </div>
+                    <div class="a">
+                        <a href="#select">Select</a>
+                    </div>            
+                    
+                    <div class="spacer"></div>
+                    
+                    <div class="opt">
+                        <h5>WHAT'S INCLUDED:</h5>
+                        <ul>
+                            <li><i class="fas fa-check"></i> Reach</li>
+                            <li><i class="fas fa-check"></i> Basic contents</li>
+                            <li><i class="fas fa-check"></i> Spam filtering</li>
+                            <li><i class="fas fa-check"></i> Custom redirect</li>
+                        </ul>
+                    </div>
+                </div>
+                
+                <div class="pl">
+                    <h4>PREMIUM</h4>
+                    <p>On large sections</p>
+                    
+                    <div class="price">
+                        <h5>¢214.40</h5> <span>/mo</span>
+                    </div>
+                    
+                    <div class="opt">
+                        <ul>
+                            <li><span>2K</span> Reach</li>
+                            <li><span>2</span> Team member</li>
+                            <li><i class="fas fa-infinity"></i> Ad Desing</li>
+                        </ul>
+                    </div>
+                    
+                    <div class="a">
+                        <a href="#select">Select</a>
+                    </div>    
+                    
+                    <div class="spacer"></div>
+                    
+                    <div class="opt">
+                        <h5>ALL PERSONAL PLUS:</h5>
+                        <ul>
+                            <li><i class="fas fa-check"></i> Premium contents</li>
+                            <li><i class="fas fa-check"></i> Advanced spam control</li>
+                            <li><i class="fas fa-check"></i> Spam filtering</li>
+                            <li><i class="fas fa-check"></i> Email Marketing</li>
+                        </ul>
+                    </div>
+                </div>
+                
+                <div class="pl">
+                    <h4>EXECUTIVE</h4>
+                    <p>For all pages</p>
+                    
+                    <div class="price">
+                        <h5>¢578.88</h5> <span>/mo</span>
+                    </div>
+                    
+                    <div class="opt">
+                        <ul>
+                            <li><span>10K</span> Reach</li>
+                            <li><span>All</span> on board</li>
+                            <li><i class="fas fa-infinity"></i> Ad Design</li>
+                        </ul>
+                    </div>
+                    
+                    <div class="a">
+                        <a href="#select">Select</a>
+                    </div>    
+                    
+                    <div class="spacer"></div>
+                    
+                    <div class="opt">
+                        <h5>ALL PROFESSIONAL PLUS:</h5>
+                        <ul>
+                            <li><i class="fas fa-check"></i> Exclusive contents</li>
+                            <li><i class="fas fa-check"></i> Advanced spam control</li>
+                            <li><i class="fas fa-check"></i> Custom redirect</li>
+                            <li><i class="fas fa-check"></i> Priority support</li>
+                        </ul>
+                    </div>
+                </div>
+                
+                <div class="pl">
+                    <h4>CUSTOM</h4>
+                    <p>For all business campaign</p>
+                    
+                    <div class="price">
+                        <h4>Custom</h4>
+                    </div>
+                    
+                    <div class="opt">
+                        <ul>
+                            <li><span>200</span> Reach</li>
+                            <li><i class="fas fa-infinity"></i> Ad samples</li>
+                            <li><i class="fas fa-infinity"></i> Team member</li>
+                        </ul>
+                    </div>
+                    <div class="b">
+                        <a href="https://wa.me/+233554678732?text=Hi+ImoDev+need+custom+ads"> Sales</a>
+                    </div>    
+                    
+                    
+                    <div class="spacer"></div>
+                    
+                    <div class="opt">
+                        <h5>ALL BUSINESS PLUS:</h5>
+                        <ul>
+                            <li><i class="fas fa-check"></i> Full service onboarding</li>
+                            <li><i class="fas fa-check"></i> Custom redirec</li>
+                            <li><i class="fas fa-check"></i> Spam Control</li>
+                            <li><i class="fas fa-check"></i> Phone support</li>
+                        </ul>
+                    </div>
+                </div> 
+            </div>  
+        </div>
+
+        <!---YEARLY PLANS----->
+        <div class="form-box yea">
+            <div class="yea">
+                <div class="pl">
+                    <h4>BASIC</h4>
+                    <p>For specific pages only</p>
+                    
+                    <div class="price">
+                        <h5>¢160.80</h5> <span>/mo</span>
+                    </div>
+                    
+                    <div class="opt">
+                        <ul>
+                            <li><span>200</span> Reach</li>
+                            <li><span>1</span> Team member</li>
+                            <li><i class="fas fa-infinity"></i> Ad samples</li>
+                        </ul>
+                    </div>
+                    <div class="a">
+                        <a href="#select">Select</a>
+                    </div>            
+                    
+                    <div class="spacer"></div>
+                    
+                    <div class="opt">
+                        <h5>WHAT'S INCLUDED:</h5>
+                        <ul>
+                            <li><i class="fas fa-check"></i> Reach</li>
+                            <li><i class="fas fa-check"></i> Basic contents</li>
+                            <li><i class="fas fa-check"></i> Spam filtering</li>
+                            <li><i class="fas fa-check"></i> Custom redirect</li>
+                        </ul>
+                    </div>
+                </div>
+                
+                <div class="pl">
+                    <h4>PREMIUM</h4>
+                    <p>On large sections</p>
+                    
+                    <div class="price">
+                        <h5>¢270.71</h5> <span>/mo</span>
+                    </div>
+                    
+                    <div class="opt">
+                        <ul>
+                            <li><span>2K</span> Reach</li>
+                            <li><span>2</span> Team member</li>
+                            <li><i class="fas fa-infinity"></i> Ad Desing</li>
+                        </ul>
+                    </div>
+                    
+                    <div class="a">
+                        <a href="#select">Select</a>
+                    </div>    
+                    
+                    <div class="spacer"></div>
+                    
+                    <div class="opt">
+                        <h5>ALL PERSONAL PLUS:</h5>
+                        <ul>
+                            <li><i class="fas fa-check"></i> Premium contents</li>
+                            <li><i class="fas fa-check"></i> Advanced spam control</li>
+                            <li><i class="fas fa-check"></i> Spam filtering</li>
+                            <li><i class="fas fa-check"></i> Email Marketing</li>
+                        </ul>
+                    </div>
+                </div>
+                
+                <div class="pl">
+                    <h4>EXECUTIVE</h4>
+                    <p>For all pages</p>
+                    
+                    <div class="price">
+                        <h5>¢643.20</h5> <span>/mo</span>
+                    </div>
+                    
+                    <div class="opt">
+                        <ul>
+                            <li><span>10K</span> Reach</li>
+                            <li><span>All</span> on board</li>
+                            <li><i class="fas fa-infinity"></i> Ad Design</li>
+                        </ul>
+                    </div>
+                    
+                    <div class="a">
+                        <a href="#select">Select</a>
+                    </div>    
+                    
+                    <div class="spacer"></div>
+                    
+                    <div class="opt">
+                        <h5>ALL PROFESSIONAL PLUS:</h5>
+                        <ul>
+                            <li><i class="fas fa-check"></i> Exclusive contents</li>
+                            <li><i class="fas fa-check"></i> Advanced spam control</li>
+                            <li><i class="fas fa-check"></i> Custom redirect</li>
+                            <li><i class="fas fa-check"></i> Priority support</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="pl">
+                    <h4>CUSTOM</h4>
+                    <p>For all business campaign</p>
+                    
+                    <div class="price">
+                        <h4>Custom</h4>
+                    </div>
+                    
+                    <div class="opt">
+                        <ul>
+                            <li><span>200</span> Reach</li>
+                            <li><i class="fas fa-infinity"></i> Ad samples</li>
+                            <li><i class="fas fa-infinity"></i> Team member</li>
+                        </ul>
+                    </div>
+                    <div class="b">
+                        <a href="https://wa.me/+233554678732?text=Hi+ImoDev+need+custom+ads"> Sales</a>
+                    </div>    
+                    
+                    
+                    <div class="spacer"></div>
+                    
+                    <div class="opt">
+                        <h5>ALL BUSINESS PLUS:</h5>
+                        <ul>
+                            <li><i class="fas fa-check"></i> Full service onboarding</li>
+                            <li><i class="fas fa-check"></i> Custom redirec</li>
+                            <li><i class="fas fa-check"></i> Spam Control</li>
+                            <li><i class="fas fa-check"></i> Phone support</li>
+                        </ul>
+                    </div>
+                </div>
+            </div> 
+        </div>
+    </div>
+
+    <!------FORM SECTION CODES-------->
+    <div class="ads-card" id="ads">
+            <h1>Ad Placement Form</h1>
+            <p>Fill out the details below. Click "Download PDF" for your records before submitting.</p>
+
+            <!-- Replace id with actual Formspree ID -->
+            <form id="adsForm" action="https://formspree.io/f/mwvpgozj " method="POST">
+                        <div class="input-group">
+                            <label>Company Name</label>
+                            <input type="text" id="company" name="company" required>
+                        </div>
+
+                        <div class="input-group">
+                            <label>Email Address</label>
+                            <input type="email" id="email" name="email" required placeholder="Receive a copy">
+                        </div>
+                
+                        <div class="input-group">
+                            <label>Contact</label> 
+                            <input type="tel" id="tel" name="tel" required placeholder="let's Us Call You!">
+                        </div>
+                        <div class="input-group" id="select">
+                            <label>Ad Package</label>
+                            <select id="package" name="package">
+                                    <option value="Basic - Sidebar">Basic - Sidebar</option>
+                                    <option value="Premium - Banner">Premium - Banner</option>
+                                    <option value="Executive - Full Page">Executive - Full Page</option>
+                            </select>
+                        </div>
+                        <div class="input-group">
+                            <label>Heading</label>
+                            <textarea id="header" name="header" rows="1" required placeholder="A header for your ads"></textarea>
+                        </div>
+
+                        <div class="input-group">
+                            <label for="file-inputs fileInput file-input" class="file-labels">
+                                <i id="upload-icon" class="fas fa-image"></i>
+                                Add Image
+                            </label>
+                            <input type="file" id="file-inputs" name="file" accept="image/*" required placeholder="Add image for your ads">
+                        </div>
+                        
+                        <div id="preview-container"></div>
+
+
+                        <div class="input-group">
+                            <label>Ad Description</label>
+                            <textarea id="details" name="details" rows="4" required></textarea>
+                        </div>
+
+                        <div class="btn-container">
+                                <button type="button" class="btn-secondary" onclick="generatePDF()">
+                                    <i class="fas fa-download">
+                                        Download PDF Receipt
+                                    </i>
+                                </button>
+                            
+                            <button type="submit" class="btn-primary">Submit to ImoDev</button>
+                        </div>
+            </form>
+    </div>
+    
+    <div class="scroll-wrapper">
+         <h2>Trending Ads</h2>
+        <div class="scroll-container">
+            <div class="scroll">
+                <span>R</span>
+                <h3>Rosie Bakes</h3>
+                <a href="https://wa.me/+233543321255?text=Hi+Rosie+bakes">Your bakery shop</a>
+            </div>
+            <div class="scroll">
+                <span>K</span>
+                <h3>KBD Graphics</h3>
+                <a href="https://wa.me/+233204213997?text=Hi+KBD+Graphics+I+need+a+design">Creativity</a>
+            </div>
+            <div class="scroll">
+                <span>M</span>
+                <h3>Mariam's Clothing</h3>
+                <a href="https://wa.me/+233543538303?text=Hi+Mariam+Clothing+I+need+some+cloths">Shop on the go!</a>
+            </div>
+            <div class="scroll">
+                <span>U</span>
+                <h3>The University</h3>
+                <a href="#ads">Gain knowledge</a>
+            </div>
+            <div class="scroll">
+                <span>D</span>
+                <h3>Data Hubs</h3>
+                <a href="https://databosshub.org/?ref=bf836383">All your gigs!</a>
+            </div>
+        </div>
+      
+      <div class="spacer"></div>
+      
+      <h2>Top Brands</h2>
+        <div class="scroll-container">
+            <div class="scrolls">
+                <img src="images/cldf.png"></span>
+                <h3>Cloudflare</h3>
+            </div>
+            <div class="scrolls">
+                <img src="images/Mariams Collectio Logo.png"></span>
+                <h3>Mariam's Clothing</h3>
+            </div>
+            <div class="scrolls">
+                <img src="images/netpac.png"></span>
+                <h3>NetPac</h3>
+            </div>
+            <div class="scrolls">
+                <img src="images/Apache1.png"></span>
+                <h3>Apache</h3>
+            </div>
+            <div class="scrolls">
+                <img src="images/PGLOGO2.png"></span>
+                <h3>Prime Graphix</h3>
+            </div>
+            <div class="scrolls">
+                <img src="images/github.png"></span>
+                <h3>GitHub</h3>
+            </div>
+            <div class="scrolls">
+                <img src="images/netlify.png"></span>
+                <h3>Netlify</h3>
+            </div>
+            <div class="scrolls">
+                <img src="images/vsc.png"></span>
+                <h3>VS Code</h3>
+            </div>
+            <div class="scrolls">
+                <img src="images/gitlab.png"></span>
+                <h3>Git lab</h3>
+            </div>
+            <div class="scrolls">
+                <img src="images/paystack.png"></span>
+                <h3>PayStack</h3>
+            </div>
+        </div>
+    </div>
+
+    <div class="protect">
+      <div class="prot">
+        <i class="fas fa-shield"></i>
+        <p>
+          We protect your privacy. Content from Drive, Gmail and Photos
+          is never used for any ads purposes without your concern.
+        </p>
+      </div>
+      <div class="pro">
+        <a href="https://wa.me/+233554678732?text=Ads+help">
+          Help
+        </a>
+      </div>
+      <div class="pro">
+        <a href="about.html">
+          About Us!
+        </a>
+      </div>
+    </div>
+    
+    <!-- The Pop-up Board -->
+    <dialog id="adBoard" class="gentle-popup">
+        <!-- Top bar to hide/close the board -->
+        <div class="dismiss-bar" onclick="closeAd()">
+            <span>Close</span>
+            <button aria-label="Close">&times;</button>
+        </div>
+        
+        <!-- Slideshow Container -->
+        <div class="slideshow-container">
+            
+            <!-- Slide 1 -->
+            <div class="mySlides fade">
+            <img src="images//custex.jpg" alt="Ad 1" style="width:100%">
+            <div class="text">Special Offer: New Arrivals</div>
+                <a href="tel:+233543538303" class="contact-link blink-link">
+                    <i class="fas fa-phone-volume" style="color: white;"></i>
+                    Call Us!
+                </a>
+            </div>
+
+            <!-- Slide 2 -->
+            <div class="mySlides fade">
+            <img src="images/Prime GraphixR new.png" alt="Ad 2" style="width:100%">
+            <div class="text">Limited Time Discount</div>
+                <a href="https://wa.me/+233554678732?text=Hi+Prime+Graphix" class="contact-link blink-link">
+                    <i class="fa-brands fa-whatsapp" style="color: green;"></i>
+                    Chat Us!
+                </a>
+            </div>
+
+            <!-- Slide 3 -->
+            <div class="mySlides fade">
+            <img src="images/eco.jpg" alt="Ad 3" style="width:100%">
+            <div class="text">Free Tiers Available!</div>
+                <a href="https://whatsapp.com/channel/0029VbBiQcTDzgTBJ6RfHT2s" class="contact-link blink-link">
+                    <i class="fa-brands fa-whatsapp" style="color: green;"></i>
+                    Join Our WhatsApp Channels
+                </a>
+            </div>
+
+            <!-- Next and previous buttons -->
+            <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+            <a class="next" onclick="plusSlides(1)">&#10095;</a>
+        </div>
+    </dialog>
+</section>
+
+
+<!--FOOTER CODES--->
+<div class="footer">
+    <div class="lef">
+        <img src="images/imodevlogo.4.png" alt="logo">
+        <span>ImoDev</span>
+    </div>
+
+    <div class="trust">
+        <p>
+            Responsive website templates ready for brands and businesses
+        </p>
+    </div>
+    <div class="ads">
+        <p> 
+            Request for advertisements On all Our media platforms.
+        </p>
+        <ul>
+            <li>WhatsApp</li>
+            <li>Facebook Ads</li>
+            <li>Email/SMS Marketing</li>
+            <li>Content Marketing</li>
+        </ul>
+        <a href="ads.html">
+            Advertise with Us! 
+        </a>          
+    </div>
+
+    <div class="help">
+        <a href="mailto:imodev.info@gmail.com?subject=Support%20Request&body=Please%20describe%20your%20issue%20here..">
+            <i class="fa-solid fa-headset">
+                Customer Support
+            </i>
+        </a>
+
+        <i class="fas fa-phone-volume">
+            +233554678732
+        </i>
+    </div>
+
+    <div class="legal">
+        <h3>Legal</h3>
+        <a href="legals.html">Privacy Policy</a>
+        <a href="legals.html">Terms Of Use</a>
+        <a href="legals.html">License</a>
+    </div>
+    
+    <div class="backs">
+        <div class="social">
+        <div class="s">
+            SOCIALS
+        </div>
+            <a href="https://wa.me/+233554678732"><i class="fa-brands fa-whatsapp"></i></a>
+            <a href="https://www.facebook.com/profile.php?id=100092258583707&mibextid=ZbWKwL"><i class="fa-brands fa-facebook"></i></a>
+            <a href="https://www.instagram.com/imodev1?igsh=MXN4N3B5N21xN2dpMA=="><i class="fa-brands fa-instagram"></i></a>
+            <a href="https://github.com"><i class="fa-brands fa-github"></i></a>
+        </div>
+        <div class="ft">
+            &copy; 2025 ImoDev
+        </div>
+    </div>
+</div>
+
+
+<!----------JAVASCRIPT FOR SLIDING BARS----------->
+<script>
+    async function generatePDF() {
+    // 1. Correct Initialization for 2026 UMD version
+    const { jsPDF } = window.jspdf;
+    const doc = new jsPDF();
+
+    // 2. Get Form Values (Updated IDs to match HTML)
+    const company = document.getElementById('company').value;
+    const email = document.getElementById('email').value;
+    const tel = document.getElementById('tel').value;
+    const packageType = document.getElementById('package').value;
+    const headerText = document.getElementById('header').value;
+    const detailsText = document.getElementById('details').value;
+
+    // Match the ID "file-inputs" from HTML
+    const fileInput = document.getElementById('file-inputs');
+    const fileName = fileInput.files.length > 0 ? fileInput.files[0].name : "No file attached";
+
+     if (!company || !email) {
+        alert("Please fill in the Company and Email fields first!");
+        return;
+     }
+
+    // 3. Branding & Styling
+    doc.setFont("helvetica", "bold");
+    doc.setFontSize(22);
+    doc.setTextColor(10, 36, 99); 
+    doc.text("IMODEV AD SUBMISSION", 20, 30);
+
+    doc.setFontSize(12);
+    doc.setTextColor(0, 0, 0);
+    doc.text(`Date: ${new Date().toLocaleDateString()}`, 20, 40);
+    doc.line(20, 45, 190, 45);
+
+    let currentY = 60; 
+    const lineSpacing = 10;
+
+    // Helper to add standard fields
+    const addField = (label, value) => {
+    doc.setFont("helvetica", "bold");
+    doc.text(`${label}:`, 20, currentY);
+    doc.setFont("helvetica", "normal");
+    doc.text(String(value), 60, currentY);
+    currentY += lineSpacing;
+  };
+
+    addField("Company", company);
+    addField("Email", email);
+    addField("Telephone", tel);
+    addField("Package", packageType);
+    addField("File Name", fileName);
+
+    // Helper to add wrapped text (for long descriptions)
+    const addWrappedSection = (label, text) => {
+    currentY += 5; 
+    doc.setFont("helvetica", "bold");
+    doc.text(`${label}:`, 20, currentY);
+    currentY += 7;
+    doc.setFont("helvetica", "normal");
+    const splitText = doc.splitTextToSize(text, 170);
+    doc.text(splitText, 20, currentY);
+    currentY += (splitText.length * 7) + 5;
+  };
+
+     addWrappedSection("Ad Header", headerText);
+     addWrappedSection("Ad Description", detailsText);
+
+     // 4. Footer
+     doc.setFontSize(10);
+     doc.setTextColor(150);
+     doc.text("Thank you for choosing ImoDev Digital Systems.", 20, 285);
+
+     // 5. Download with cleaned filename
+     const safeName = company.replace(/[^a-z0-9]/gi, '_');
+     doc.save(`ImoDev_Receipt_${safeName}.pdf`);
+  } 
+
+</script>
+
+<script>
+    //ADS BOARD JS
+    const adBoard = document.getElementById('adBoard');
+    let slideIndex = 1;
+    let slideInterval; // Variable to hold the auto-slide timer
+
+    // --- Pop-up Management (from previous request) ---
+    window.addEventListener('load', () => {
+    setTimeout(() => {
+        adBoard.showModal();
+        startSlideshow(); // Start the slideshow once the pop-up opens
+    }, 1000); 
+    });
+
+
+    function closeAd() {
+    adBoard.close();
+    clearInterval(slideInterval); // Stop auto-sliding when closed
+    }
+
+    // --- Slideshow Management ---
+
+    function startSlideshow() {
+    showSlides(slideIndex);
+    // Change image every 5 seconds (5000ms)
+    slideInterval = setInterval(() => {
+        plusSlides(1);
+    }, 5000); 
+    }
+
+    // Next/previous controls
+    function plusSlides(n) {
+    showSlides(slideIndex += n);
+    // Reset auto-slide timer on manual click
+    clearInterval(slideInterval); 
+    startSlideshow();
+    }
+
+    // Main function to display the correct slide
+    function showSlides(n) {
+    let i;
+    let slides = document.getElementsByClassName("mySlides");
+    
+    // Wrap around if we go past the end or beginning
+    if (n > slides.length) {slideIndex = 1}
+    if (n < 1) {slideIndex = slides.length}
+    
+    // Hide all slides
+    for (i = 0; i < slides.length; i++) {
+        slides[i].style.display = "none";
+    }
+    
+    // Show the current slide
+    slides[slideIndex-1].style.display = "block";
+    }
+
+</script>
+
+<script>
+    ///PREVIEW CODES
+    document.getElementById('upload-icon').addEventListener('click', function(){
+        document.getElementById('file-inputs').click();
+    });
+
+    document.getElementById('file-inputs').addEventListener('change', function(event){
+        const previewContainer = document.getElementById('preview-container');
+        previewContainer.innerHTML = ''; //clear previous previews 
+        const file = event.target.files[0];
+            if(file){
+            const reader = new FileReader();
+
+            if(file.type.startsWith('image/')){
+            //show image preview
+            reader.onload = function(e){
+                const img = document.createElement('img');
+                img.src = e.target.result;
+
+                previewContainer.appendChild(img);
+            };
+
+            reader.readAsDataURL(file);
+            } else if (file.type.startsWith('video/')) {
+            //show video preview 
+            reader.onload = function(e){
+                const video = document.createElement('video');
+                video.src = e.target.result;
+                video.controls = true;
+
+                previewContainer.appendChild(video);
+            };
+
+            reader.readAsDataURL(file);
+            }
+        }  
+    });
+</script>
+
+<script>
+     const planBox = document.querySelector('.plan-box');
+     const monLink = document.querySelector('.mon-link');
+     const yeaLink = document.querySelector('.yea-link');
+
+    yeaLink.addEventListener('click', () => {
+        planBox.classList.add('active');
+    });
+    
+    monLink.addEventListener('click', () => {
+        planBox.classList.remove('active');
+    });
+
+    function moveStyle(clicked, other) {
+      clicked.classList.add('mon-link');
+      other.classList.remove('mon-link');
+    };
+
+    monLink.onclick = () => moveStyle(monLink, yeaLink);
+    yeaLink.onclick = () => moveStyle(yeaLink, monLink);
+
+</script>
+
+<script>
+    //TOGGLE MENU
+    function toggleMenu() {
+        const navLinks = document.getElementById("navLinks");
+        const barIcon = document.getElementById("barIcon");
+        const closeIcon = document.getElementById("closeIcon");
+
+        //TOGGLE THE LINK
+        navLinks.classList.toggle("active");
+
+        //SWITCH THE ICONS
+        if(navLinks.classList.contains("active")){
+            barIcon.style.display = "none";
+            closeIcon.style.display = "block";
+        } else{
+            barIcon.style.display = "block";
+            closeIcon.style.display = "none";
+        }
+        }           
+</script> 
+</body>
+</html>

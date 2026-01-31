@@ -1,0 +1,386 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ImoDev</title>
+    
+    <link rel="stylesheet" href="assets/fontawesome-free-6.6.0-web/css/all.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link rel="stylesheet" href="styles/styles.css"> 
+
+</head>
+<body>
+<!---Scroll Progress---->>
+<div id="progress-bar"></div>
+<!--HEADER CODES--->
+<div class="header" id="header">
+    <div class="lef">
+        <img src="images/imodevlogo.4.png" alt="logo">
+        <span>ImoDev</span>
+    </div>
+
+    <!-- The menu icon (only visible on mobile) -->
+    <button class="mobile-menu-btn" onclick="toggleMenu()" aria-label="Toggle menu">
+        <i class="fas fa-bars" id="barIcon"></i>
+        <i class="fas fa-xmark" id="closeIcon" style="display: none;"></i>
+    </button>
+
+
+    <div class="righ" id="navLinks">
+        <div class="nav-links">
+            <nav class="fn">
+                <a href="index.html" style="background-color: whitesmoke; color: #011331; padding: 4px; border-radius: 5px;">
+                    Home
+                </a>
+            </nav>
+            <nav>
+                <a href="services.html">Services</a>
+            </nav>
+            <nav>
+                <a href="about.html">About</a>
+            </nav>
+            <nav>
+                <a href="announcements.html">Updates</a>
+            </nav>
+        </div>
+
+        
+        <div class="theme">
+            <div class="navlink">
+                <a href="requestform.html">
+                    Get Started
+                </a>
+            </div>
+            <h5>CONNECT </h5>
+            <ul>
+                <li>
+                    <i class="fas fa-envelope"></i>
+                    <a href="mailto:imodev.info@gmail.com?subject=Services%20Request&body=Please%20describe%20your%20request%20here..">
+                        Email Us!
+                    </a>
+                </li>
+                <li>
+                    <i class="fas fa-phone-volume"></i>
+                    <a href="tel:+233554678732">(+233)55 467 8732</a>
+                </li>
+                <li>
+                    <i class="fas fa-location-dot"></i>
+                    <p>Accra - Ghana</p>
+                </li>
+            </ul>
+        </div>
+    </div>
+</div>
+
+<!--SECTION CODES--->
+<div class="mainlef  ">
+    <div class="contents hero">
+        <h1>Prime Coding</h1>
+        <span>Full Stack web Developer</span>
+        <h2>
+            The code solution for individuals and any businesses. 
+        </h2>
+        <p>
+            Creating both frontend/backend codes to our valued clients.
+        </p>
+    </div>
+    <a href="requestform.html">
+        Get Started
+    </a>    
+</div>
+
+<!---RIGHTSIDE ELEMENTS-->
+<div class="mainrigh hero">
+    <h3>Building Sites Your Way</h3>
+    <div class="inside hero">
+        <div class="box hero">
+            <div class="bx">
+                <span>Powerful Js & HTML/CSS</span>
+            </div>
+                <i class="fas fa-atom"></i>
+            <p>
+                Using libraries for responsive sites. Deploy your sites
+                to the general public.
+            </p>
+        </div>
+        <div class="box">
+            <div class="bx">
+                <span> Simple Frontend Codes</span>
+            </div>
+                <i class="fas fa-code"></i> 
+            <p>
+                Set up responsive user-end interfaces. 
+                No Sever code required.
+            </p>
+        </div>
+        <div class="box hero">
+            <div class="bx">
+                <span>How it works</span>
+            </div>
+                <i class="fas fa-atom"></i> 
+            
+            <p>
+                Here's what happens after your site request is submitted. <br>
+                <!---We'll get your site where it needs to be.-->
+            </p>
+            <a href="services.html">Learn More...</a>
+        </div>
+    </div>
+    <div class="bottom hero">
+        <h4>Trusted by 100+ freelancers, developers, agencies and businesses</h4>
+
+        <div class="spn">
+            <div class="span">
+                <i class="fa-brands fa-github"></i>
+                <p>gitHub</p>
+            </div>
+            <div class="span">
+                <i class="fas fa-s"></i>
+                <p>Sika Motion Tech Lite</p>
+            </div>
+            <div class="span">
+                <i class="fa-brands fa-readme"></i>
+                <p>readme</p>                
+            </div>
+            <div class="span">
+                <i class="fas fa-a"></i>
+                <p>Adobe</p>
+            </div>
+            <div class="span">
+                <i class="fas fa-brain"></i>
+                <p>DataIQ Labs</p>
+            </div>
+        </div>
+    </div>
+</div>
+
+<section class="feedback-section">
+    <!-- Feedback Submission Form -->
+    <div class="feedback-form">
+        <h3>Leave a Feedback</h3>
+
+        <div id="contact-form">
+            <input type="text" id="userName" placeholder="Your Name">
+            <textarea id="userComment" placeholder="Your Feedback..."></textarea>
+            <button type="submit" onclick="addFeedback()">Submit Feedback</button>
+        </div>
+    </div>
+
+    <!-- Feedback Display Area -->
+    <div id="feedbackContainer" class="feedback-grid">
+        <!-- Feedback items will appear here -->
+    </div>
+
+    <button id="readMoreBtn" onclick="toggleReadMore()">Read More</button>
+</section>
+
+<!--ADS BOARD CODES--->
+<section class="ad-gallery">
+    <!-- Image Ad -->
+    <div class="ad-card">
+        <img src="images/Prime GraphixR new.png" alt="Customer Product Ad" loading="lazy">
+        <div class="ad-overlay">
+        <p>Quarter Sale - 30% Off</p>
+        <a href="https://wa.me/+233554678732?text=Hi+Prime+Graphix+I+need+a+design" class="ad-btn">Shop Now</a>
+        </div>
+    </div>
+
+    <!-- Video Ad -->
+    <div class="ad-card">
+        <video autoplay loop muted playsinline poster="images/video-thumb.jpg">
+        <source src="videos/ad-video.mp4" type="video/mp4">
+        Your browser does not support the video tag.
+        </video>
+        <div class="ad-overlay">
+        <p>Pre Order: Vals Day Packages</p>
+        <a href="https://wa.me/+233543321255?text=Hi+Rosie+need+a+vals+pakage" class="ad-btn">Order Now!</a>
+        </div>
+    </div>
+</section>
+
+
+<!--FOOTER CODES--->
+<div class="footer">
+    <div class="lef">
+        <img src="images/imodevlogo.4.png" alt="logo">
+        <span>ImoDev</span>
+    </div>
+
+    <div class="trust">
+        <p>
+            Responsive website templates ready for brands and businesses
+        </p>
+    </div>
+    <div class="ads">
+        <p> 
+            Request for advertisements On all Our media platforms.
+        </p>
+        <ul>
+            <li>WhatsApp</li>
+            <li>Facebook Ads</li>
+            <li>Email/SMS Marketing</li>
+            <li>Content Marketing</li>
+        </ul>
+        <a href="ads.html">
+            Advertise with Us! 
+        </a>          
+    </div>
+
+    <div class="help">
+        <a href="mailto:imodev.info@gmail.com?subject=Support%20Request&body=Please%20describe%20your%20issue%20here..">
+            <i class="fa-solid fa-headset">
+                Customer Support
+            </i>
+        </a>
+
+        <i class="fas fa-phone-volume">
+            +233554678732
+        </i>
+    </div>
+
+    <div class="legal">
+        <h3>Legal</h3>
+        <a href="legals.html">Privacy Policy</a>
+        <a href="legals.html">Terms Of Use</a>
+        <a href="legals.html">License</a>
+    </div>
+    
+    <div class="backs">
+        <div class="social">
+        <div class="s">
+            SOCIALS
+        </div>
+            <a href="https://wa.me/+233554678732"><i class="fa-brands fa-whatsapp"></i></a>
+            <a href="https://www.facebook.com/profile.php?id=100092258583707&mibextid=ZbWKwL"><i class="fa-brands fa-facebook"></i></a>
+            <a href="https://www.instagram.com/imodev1?igsh=MXN4N3B5N21xN2dpMA=="><i class="fa-brands fa-instagram"></i></a>
+            <a href="https://github.com"><i class="fa-brands fa-github"></i></a>
+        </div>
+        <div class="ft">
+            &copy; 2025 ImoDev
+        </div>
+    </div>
+</div>
+
+<script>
+    //FEEDBACK JS WITH AVATAR         
+    // 1. Load existing feedback from localStorage as soon as the page opens
+    let allFeedback = JSON.parse(localStorage.getItem('userFeedbacks')) || [];
+
+    function displayAllFeedback() {
+    const container = document.getElementById('feedbackContainer');
+    container.innerHTML = ''; // Clear current display
+
+    allFeedback.forEach((item, index) => {
+        const newCard = document.createElement('div');
+        newCard.className = 'feedback-card';
+        
+        // Hide items beyond the first 4 for the "Read More" logic
+        if (index >= 4) newCard.classList.add('hidden');
+
+        const initials = item.name.split(' ').map(n => n[0]).join('').substring(0, 2);
+
+        newCard.innerHTML = `
+        <div class="feedback-header">
+            <div class="avatar">${initials}</div>
+            <strong>${item.name}</strong>
+        </div>
+        <p>${item.comment}</p>
+        `;
+        container.appendChild(newCard);
+    });
+
+    // Manage "Read More" button visibility
+    const btn = document.getElementById('readMoreBtn');
+    btn.style.display = allFeedback.length > 3 ? 'block' : 'none';
+    }
+
+    function addFeedback() {
+    const name = document.getElementById('userName').value;
+    const comment = document.getElementById('userComment').value;
+
+    if (!name || !comment) return alert("Please fill all fields");
+
+    // 2. Add new feedback to the array
+    const newEntry = { name, comment };
+    allFeedback.push(newEntry);
+
+    // 3. Save the updated array permanently to localStorage
+    localStorage.setItem('userFeedbacks', JSON.stringify(allFeedback));
+
+    // Update the screen and clear inputs
+    displayAllFeedback();
+    document.getElementById('userName').value = '';
+    document.getElementById('userComment').value = '';
+    }
+
+    // Initial call to show saved data on page load
+    window.onload = displayAllFeedback;
+
+</script>
+<script>
+    
+    function addFeedback() {
+    const name = document.getElementById('userName').value;
+    const comment = document.getElementById('userComment').value;
+    
+    if (!name || !comment) return alert("Please fill all fields");
+
+    const container = document.getElementById('feedbackContainer');
+    const newCard = document.createElement('div');
+    newCard.className = 'feedback-card';
+    
+    // If there are already 4+ items, hide the new one initially
+    if (container.children.length >= 3) {
+        newCard.classList.add('hidden');
+        document.getElementById('readMoreBtn').style.display = 'block';
+    }
+
+    newCard.innerHTML = `<strong>${name}:</strong> ${comment}`;
+    container.appendChild(newCard);
+    
+    // Clear inputs
+    document.getElementById('userName').value = '';
+    document.getElementById('userComment').value = '';
+    }
+
+    function toggleReadMore() {
+    const hiddenItems = document.querySelectorAll('.feedback-card.hidden');
+    const btn = document.getElementById('readMoreBtn');
+
+    hiddenItems.forEach(item => {
+        item.classList.remove('hidden');
+        item.classList.add('visible'); // Optional: for animations
+    });
+
+    // Hide the button once all items are shown
+    btn.style.display = 'none';
+    }
+
+    
+</script>
+<script>
+    //TOGGLE MENU
+    function toggleMenu() {
+        const navLinks = document.getElementById("navLinks");
+        const barIcon = document.getElementById("barIcon");
+        const closeIcon = document.getElementById("closeIcon");
+
+        //TOGGLE THE LINK
+        navLinks.classList.toggle("active");
+
+        //SWITCH THE ICONS
+        if(navLinks.classList.contains("active")){
+            barIcon.style.display = "none";
+            closeIcon.style.display = "block";
+        } else{
+            barIcon.style.display = "block";
+            closeIcon.style.display = "none";
+        }
+        }           
+</script>
+</body>
+</html>
+
+
+

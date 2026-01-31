@@ -1,0 +1,358 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ImoDev</title>
+    
+    <link rel="stylesheet" href="assets/fontawesome-free-6.6.0-web/css/all.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link rel="stylesheet" href="styles/about.css">
+    
+</head>
+<body>
+    <!---Scroll Progress---->>
+    <div id="progress-bar"></div>
+    <!--HEADER CODES--->
+    <div class="header" id="header">
+        <div class="lef">
+            <img src="images/imodevlogo.4.png" alt="logo">
+            <span>ImoDev</span>
+        </div>
+
+        <!-- The menu icon (only visible on mobile) -->
+        <button class="mobile-menu-btn" onclick="toggleMenu()" aria-label="Toggle menu">
+          <i class="fas fa-bars" id="barIcon"></i>
+          <i class="fas fa-xmark" id="closeIcon" style="display: none;"></i>
+        </button>
+
+
+        <div class="righ" id="navLinks">
+            <div class="nav-links">
+                <nav>
+                    <a href="index.html">
+                        Home
+                    </a>
+                </nav>
+                <nav>
+                    <a href="services.html">Services</a>
+                </nav>
+                <nav class="an">
+                    <a href="about.html" style="background-color: whitesmoke; color: #011331; padding: 4px; border-radius: 5px;">About</a>
+                </nav>
+                <nav>
+                    <a href="announcements.html">Updates</a>
+                </nav>
+            </div>
+            
+            <div class="theme">
+               <div class="navlink">
+                <a href="requestform.html">
+                    Get Started
+                </a> 
+               </div>
+             <h5>CONNECT </h5>
+             <ul>
+                <li>
+                    <i class="fas fa-envelope"></i>
+                    <a href="mailto:imodev.info@gmail.com?subject=Services%20Request&body=Please%20describe%20your%20request%20here..">
+                        Email Us!
+                    </a>
+                </li>
+                <li>
+                    <i class="fas fa-phone-volume"></i>
+                    <a href="tel:+233554678732">(+233)55 467 8732</a>
+                </li>
+                <li>
+                    <i class="fas fa-location-dot"></i>
+                    <p>Accra - Ghana</p>
+                </li>
+             </ul>
+           </div>
+        </div>
+    </div>
+
+    <!--SECTION CODES--->
+    <section>
+        <div class="main">
+            <div class="mainto hero">
+                <h4>Hi, we're ImoDev</h4>
+                <p>
+                    Founded in 2023 as a side project, ImoDev has become a househould  name
+                    and a core developer powering websites across the internet.
+                </p>
+                <p>
+                    Our bootstrapped journey reflects our belief in the power of the web to change lives.
+                    We're developers,building for individuals and businesses-helping you create custom, 
+                    responsive sites with ease!
+                </p>
+                <img src="images/studio.jpg" alt="studio picture">
+            </div>
+
+            <div class="maindo fade-in-selection hero">
+                <h5>Why we started ImoDev</h5>
+                <p>
+                    To our founder, designing felt like the least creative aspect of building websites. 
+                    We set out to eliminate the drudgery and make building responsive websites. 
+                </p>
+                <img src="images/tem.jpg" alt="studio picture2">
+            </div>
+        </div>
+
+        <div class="bars">
+            <div class="nab fade-in-selection" style="background-color: red;";>
+                <i class="fas fa-line-chart"></i>
+                <h6>Unlocking Creative</h6>
+                <p>
+                    We want to help businesses focus on responsive websites. Designing 
+                    contents and user experience...
+                </p>
+            </div>
+            <div class="nab fade-in-selection" style="background-color: aliceblue; color: black;">
+                <i class="fas fa-atom"></i>
+                <h6>Anyone Can Code</h6>
+                <p>
+                    Coding is a tool that anyone can learn. We're enabling individuals, 
+                    businesses and everyone in-between.
+                </p>
+            </div>
+            <div class="nab fade-in-selection" style="background-color: rgb(3, 17, 29);">
+                <i class="fas fa-globe"></i>
+                <h6>A simpler internet</h6>
+                <p>
+                    Previously, the web was just HTML and forms. Now, they're super complex 
+                    but somehow everything looks the same. We want you keep it simple and Unique!
+                </p>
+            </div>
+        </div>
+        
+<!-----TEAM BIO------>
+<div class="bio-container">
+    <div class="gallery">
+      <div class="image-item">
+        <img src="images/av.jpeg" class="trigger" data-text="Founder of ImoDev, driven vision for enterprise digital solutions. Solid backbone in fullstack development. Samuel is passionate to bridge the gap between complex code intuitive user experiences." data-link="https://instagram.com/imodev1?igsh=MXN4N3B5N21xN2dpMA==">
+        <h3>Imoro Samuel - Founder</h3>
+        <p>FullStack Developer</p>
+      </div>
+      <div class="image-item">
+        <img src="images/download.jpeg" class="trigger" data-text="Ruth is specialised in UI architecture and microservies. She ensure every code is responsive and visually appealling and secure to clients, with unforgettable user experience." data-link="https://wa.me/+233541934888?text=Hi+need+a+service">
+        <h3>Ruth Safoa - UI Developer</h3>
+        <p>Modern Architecture</p>
+      </div>
+      <div class="image-item">
+        <img src="images/images.jpeg" class="trigger" data-text="With a firm background in data science, Michael combines statisticcs,AI and Computer science to analyse data - enabling informed decision making, predictive forecasting and process automation. He analyse clients behavior on sites to provide tailored recommendations and improve satisfaction." data-link="https://wa.me/+233248006787?text=Hi+need+a+service">
+        <h3>Michael Amponsah - Data Analytics</h3>
+        <p>Modern Web Analyse</p>
+      </div>
+    </div>
+    
+    <!-- Modal -->
+    <div id="imageModal" class="modal">
+      <div class="modal-content">
+        <span class="close">&times;</span>
+        <img id="modalImg" src="">
+        <h2 id="modalText"></h2>
+        <a href="#" id="socialLink" target="_blank"><i class="fas fa-rocket"></i> Visit Social Page</a>
+      </div>
+    </div>
+</div>        
+
+
+        <div class="wrappers fade-in-selection hero">
+            <h3>How it feels to work here?</h3>
+            <p>
+                Join the ImoDev Team <br>
+                Email us at : <a href="mailto:imodev.info@gmail.com?subject=Team%20Request&body=Please%20describe%20your%20request%20here.." style="text-decoration: none; color: red;">
+                                imodev.info@gmail.com
+                              </a>
+            </p>
+
+            <div class="form-container">
+                <p>
+                    
+                </p>
+                <!---Existing Formspree forms goes here---->
+                <form id="contact-form" action="https://formspree.io/f/mwvpgozj" method="POST">
+
+                    <p>
+                        Let's hear from you. Exclusive Opportunities awaits you!
+                    </p>
+                    <!--label for="name" >Name:</label-->
+                    <input type="text" id="name" name="name"  placeholder="Name">
+    
+                    <!--label for="email" >Email:</label-->
+                    <input type="email" id="email" name="email" placeholder="Email" required>
+    
+                    <!--label for="message" >Message:</label--->
+                    <textarea id="message" name="message" rows="4" placeholder="Message" required></textarea>
+    
+                    <input type="hidden" name="_subject" value="New Customer Message!">
+                    
+                    <button type="submit">Submit</button>
+                </form>
+    
+                <p id="form-status"></p>
+            </div>
+        </div> 
+    </section>
+
+
+<!--FOOTER CODES--->
+<div class="footer">
+    <div class="lef">
+        <img src="images/imodevlogo.4.png" alt="logo">
+        <span>ImoDev</span>
+    </div>
+
+    <div class="trust">
+        <p>
+            Responsive website templates ready for brands and businesses
+        </p>
+    </div>
+    <div class="ads">
+        <p> 
+            Request for advertisements On all Our media platforms.
+        </p>
+        <ul>
+            <li>WhatsApp</li>
+            <li>Facebook Ads</li>
+            <li>Email/SMS Marketing</li>
+            <li>Content Marketing</li>
+        </ul>
+        <a href="ads.html">
+            Advertise with Us! 
+        </a>          
+    </div>
+
+    <div class="help">
+        <a href="mailto:imodev.info@gmail.com?subject=Support%20Request&body=Please%20describe%20your%20issue%20here..">
+            <i class="fa-solid fa-headset">
+                Customer Support
+            </i>
+        </a>
+
+        <i class="fas fa-phone-volume">
+            +233554678732
+        </i>
+    </div>
+
+    <div class="legal">
+        <h3>Legal</h3>
+        <a href="legals.html">Privacy Policy</a>
+        <a href="legals.html">Terms Of Use</a>
+        <a href="legals.html">License</a>
+    </div>
+    
+    <div class="backs">
+        <div class="social">
+        <div class="s">
+            SOCIALS
+        </div>
+            <a href="https://wa.me/+233554678732"><i class="fa-brands fa-whatsapp"></i></a>
+            <a href="https://www.facebook.com/profile.php?id=100092258583707&mibextid=ZbWKwL"><i class="fa-brands fa-facebook"></i></a>
+            <a href="https://www.instagram.com/imodev1?igsh=MXN4N3B5N21xN2dpMA=="><i class="fa-brands fa-instagram"></i></a>
+            <a href="https://github.com"><i class="fa-brands fa-github"></i></a>
+        </div>
+        <div class="ft">
+            &copy; 2025 ImoDev
+        </div>
+    </div>
+</div>
+
+<script>
+    document.addEventListener('DOMContentLoaded', () => {
+        const form = document.getElementById('contact-form');
+        const formStatus = documen.getElementById('form-status');
+
+        form.addEventListener('submit', async (event) => {
+            event.preventDefault();
+
+            const formData = new FormData(form);
+
+            try {
+                const response = await fetch(form.action, {
+                    method: 'POST',
+                    body: formData,
+                    headers: {
+                        'Accept': 'application/json'
+                    }
+                });
+
+                if(response.ok){
+                    formStatus.textContent = 'Thank you for your message! we will reply soon.';
+                    formStatus.style.color = 'green';
+                    form.reset();
+                } else {
+                    formStatus.textContent = 'Oops! There was a problem your message.';
+                    formStatus.style.color = 'red';
+                }
+            } catch (error) {
+                formStatus.textContent = 'Oops! Network error occured.';
+                formStatus.style.color = 'red';
+            }
+        });
+    });
+</script>  
+<script>
+    //TOGGLE MENU
+    function toggleMenu() {
+        const navLinks = document.getElementById("navLinks");
+        const barIcon = document.getElementById("barIcon");
+        const closeIcon = document.getElementById("closeIcon");
+
+        //TOGGLE THE LINK
+        navLinks.classList.toggle("active");
+
+        //SWITCH THE ICONS
+        if(navLinks.classList.contains("active")){
+            barIcon.style.display = "none";
+            closeIcon.style.display = "block";
+        } else{
+            barIcon.style.display = "block";
+            closeIcon.style.display = "none";
+        }
+        }           
+</script>   
+<script>
+  // Theme Switching Logic
+  const themeInputs = document.querySelectorAll('input[name="theme"]');
+  const htmlElement = document.documentElement;
+
+  const applyTheme = (theme) => {
+    if (theme === 'system') {
+      const isDark = window.matchMedia('(prefers-color-scheme: dark)').matches;
+      htmlElement.setAttribute('data-theme', isDark ? 'dark' : 'light');
+    } else {
+      htmlElement.setAttribute('data-theme', theme);
+    }
+  };
+
+  themeInputs.forEach(input => {
+    input.addEventListener('change', (e) => {
+      applyTheme(e.target.value);
+      localStorage.setItem('theme-pref', e.target.value);
+    });
+  });
+
+  // Gallery Logic
+  const modal = document.getElementById("imageModal");
+  const modalImg = document.getElementById("modalImg");
+  const modalText = document.getElementById("modalText");
+  const socialLink = document.getElementById("socialLink");
+
+  document.querySelectorAll(".trigger").forEach(img => {
+    img.onclick = function() {
+      modal.style.display = "block";
+      modalImg.src = this.src;
+      modalText.innerText = this.dataset.text;
+      socialLink.href = this.dataset.link;
+    }
+  });
+
+  document.querySelector(".close").onclick = () => modal.style.display = "none";
+  window.onclick = (e) => { if (e.target == modal) modal.style.display = "none"; }
+</script>       
+</body>
+</html>
+
+

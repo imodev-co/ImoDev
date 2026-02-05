@@ -118,8 +118,8 @@
         <div class="step active">
         <h3>Personal Info</h3>
         <p>Tell us who you are.</p>
-        <input type="text" placeholder="Full Name" required>
-        <input type="email" placeholder="Email Address" required>
+        <input type="text" name="name" placeholder="Full Name" required>
+        <input type="email" name="email"  placeholder="Email Address" required>
         </div>
 
         <!-- Step 2 -->
@@ -127,26 +127,26 @@
         <h3>Project Details</h3>
         <p>Request Poject*</p>
         <select id="package" name="package">
-                <option value="Basic - Sidebar">Build New Website</option>
-                <option value="Premium - Banner">Buy Templates / Products</option>
-                <option value="Executive - Full Page">IT Solutions / Consulting</option>
+                <option value="New - Site">Build New Website</option>
+                <option value="Buy - template ">Buy Templates / Products</option>
+                <option value="IT Solutions">IT Solutions / Consulting</option>
         </select>
 
         <p>Budget Range</p>
-        <select id="budget" name="package">
-                <option value="Basic - Sidebar"> Under GHc1,500</option>
-                <option value="Premium - Banner">GHc1,500 - GHc2,000</option>
-                <option value="Executive - Full Page">GHc5,000 - GHc10,000</option>
+        <select id="budget" name="budget">
+                <option value="Basic"> Under GHc1,500</option>
+                <option value="Premium">GHc1,500 - GHc2,000</option>
+                <option value="Executive">GHc5,000 - GHc10,000</option>
         </select>
 
         <p>Duration</p>
-        <select id="duration" name="package">
-                <option value="Basic - Sidebar">Immediate (1-2 weeks)</option>
-                <option value="Premium - Banner">Short term (1-3 months)</option>
-                <option value="Executive - Full Page">Medium term (3-6 months)</option>
-                <option value="Executive - Full Page">Long term (6+ months)</option>
+        <select id="duration" name="duration">
+                <option value="Immediate">Immediate (1-2 weeks)</option>
+                <option value="Short term">Short term (1-3 months)</option>
+                <option value="Medium term">Medium term (3-6 months)</option>
+                <option value="Long term">Long term (6+ months)</option>
         </select>
-        <textarea id="details" name="details" rows="4" placeholder="Specify Other.."></textarea>
+        <textarea id="details" name="_subject" value="Other Package." rows="4" placeholder="Specify Other.."></textarea>
         </div>
 
         <!-- Step 3 -->
@@ -377,6 +377,7 @@
 </script>
 </body>
 </html>
+
 
 
 

@@ -1,0 +1,368 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ImoDev</title>
+    
+    <link rel="stylesheet" href="assets/fontawesome-free-6.6.0-web/css/all.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link rel="stylesheet" href="styles/request.css">
+    
+</head>
+<body>
+<!---Scroll Progress---->>
+<div id="progress-bar"></div>
+<!--HEADER CODES--->
+<div class="header" id="header">
+    <div class="lef">
+        <img src="images/imodevlogo.4.png" alt="logo">
+        <span>ImoDev</span>
+    </div>
+
+    <!-- The menu icon (only visible on mobile) -->
+    <button class="mobile-menu-btn" onclick="toggleMenu()" aria-label="Toggle menu">
+        <i class="fas fa-bars" id="barIcon"></i>
+        <i class="fas fa-xmark" id="closeIcon" style="display: none;"></i>
+    </button>
+
+
+    <div class="righ" id="navLinks">
+        <div class="nav-links">
+            <nav>
+                <a href="index.html">
+                    Home
+                </a>
+            </nav>
+            <nav>
+                <a href="services.html">Services</a>
+            </nav>
+            <nav>
+                <a href="about.html">About</a>
+            </nav>
+            <nav>
+                <a href="announcements.html">Updates</a>
+            </nav>
+        </div>
+
+        
+        <div class="theme">
+            <div class="navlink">
+                <a href="requestform.html">
+                    Get Started
+                </a> 
+            </div>
+            <h5>CONNECT </h5>
+            <ul>
+            <li>
+                <i class="fas fa-envelope"></i>
+                <a href="mailto:imodev.info@gmail.com?subject=Services%20Request&body=Please%20describe%20your%20request%20here..">
+                    Email Us!
+                </a>
+            </li>
+            <li>
+                <i class="fas fa-phone-volume"></i>
+                <a href="tel:+233554678732">(+233)55 467 8732</a>
+            </li>
+            <li>
+                <i class="fas fa-location-dot"></i>
+                <p>Accra - Ghana</p>
+            </li>
+            </ul>
+        </div>
+    </div>
+</div>
+
+<!--SECTION CODES--->
+<section>
+    <!--ADS SECTION CODES--->
+    <div class="top-bar hero">
+        <h1>Innovative & Responsive Web Designs</h1>
+        <p>
+            Web designs that suits your businesses - Custom websites that drive traffic
+        </p>
+        
+        <a href="#ads">Request A Service</a>
+    </div>
+
+    <div class="exp">
+        <div class="exx">
+            <div class="ex">
+                <h4>50+</h4>
+                <strong>PROJECT DELIVERED</strong>
+            </div>
+            <div class="ex">
+                <h4>93%</h4>
+                <strong>CLIENT RETENTION</strong>
+            </div>
+        </div>
+        <div class="exx">
+            <div class="ex">
+                <h4>7+</h4>
+                <strong>YEARS EXPERIENCE</strong>
+            </div>
+            <div class="ex">
+                <h4>24/7</h4>
+                <strong>SUPPORT</strong>
+            </div>
+        </div>
+    </div>
+
+    <div class="form-container" id="ads">
+    <div class="progress-container">
+        <div class="progress-bar" id="progressBar"></div>
+    </div>
+
+    <form id="multiStepForm" action="https://formspree.io/f/mwvpgozj" method="POST">
+        <!-- Step 1 -->
+        <div class="step active">
+        <h3>Personal Info</h3>
+        <p>Tell us who you are.</p>
+        <input type="text" name="full_name" placeholder="Full Name" required>
+        <input type="email" name="email" placeholder="Email Address" required>
+        </div>
+
+        <!-- Step 2 -->
+        <div class="step">
+        <h3>Project Details</h3>
+        <p>Request Poject*</p>
+        <select name="project_type">
+                <option value="Build New Website">Build New Website</option>
+                <option value="Buy Templates">Buy Templates / Products</option>
+                <option value="IT Solutions">IT Solutions / Consulting</option>
+        </select>
+
+        <p>Budget Range</p>
+        <select name="budget">
+                <option value="Under GHc1,500"> Under GHc1,500</option>
+                <option value="GHc1,500 - GHc2,000">GHc1,500 - GHc2,000</option>
+                <option value="GHc5,000+">GHc5,000 - GHc10,000</option>
+        </select>
+
+        <p>Duration</p>
+        <select name="duratuion">
+                <option value="Immediate">Immediate (1-2 weeks)</option>
+                <option value="Short term">Short term (1-3 months)</option>
+                <option value="Medium term">Medium term (3-6 months)</option>
+                <option value="Long term">Long term (6+ months)</option>
+        </select>
+        <textarea id="details" name="details" rows="4" placeholder="Specify Other.."></textarea>
+        </div>
+
+        <!-- Step 3 -->
+        <div class="step">
+        <h3>Finalize</h3>
+        <p>Getting your site ready!</p>
+        <p>Click submit to finish the request process.</p>
+
+            <div class="remember-forgot">
+                <label for="">
+                    <input type="checkbox" name="terms_agreed"class="checkbox">
+                    <a href="legals.html">
+                        I agree to the terms & conditions
+                    </a>
+                </label>
+            </div>
+        </div>
+
+        <div class="btn-group">
+        <button type="button" class="prev-btn" onclick="changeStep(-1)" id="prevBtn" disabled>Previous</button>
+        <button type="button" class="next-btn" onclick="changeStep(1)" id="nextBtn">Next</button>
+        </div>
+    </form>
+    </div>
+
+    <div class="trustee">
+        <h3>TRUSTED BY INNOVATIVE TEAM AT</h3>
+        <div class="trus">
+            <div class="tru">
+                <i class="fas fa-g"></i>
+                <p>Google</p>
+            </div>
+            <div class="tru">
+                <i class="fa-brands fa-windows"></i>
+                <p>Microsoft</p>
+            </div>
+        </div>
+        
+        <div class="trus">
+            <div class="tru">
+                <i class="fa-brands fa-amazon"></i>
+                <p>Amazon</p>
+            </div>
+            <div class="tru">
+                <i class="fa-brands fa-github"></i>
+                <p>GitHub</p>
+            </div>
+        </div>
+    </div>
+</section>
+
+
+<!--FOOTER CODES--->
+<div class="footer">
+    <div class="lef">
+        <img src="images/imodevlogo.4.png" alt="logo">
+        <span>ImoDev</span>
+    </div>
+
+    <div class="trust">
+        <p>
+            Responsive website templates ready for brands and businesses
+        </p>
+    </div>
+    <div class="ads">
+        <p> 
+            Request for advertisements On all Our media platforms.
+        </p>
+        <ul>
+            <li>WhatsApp</li>
+            <li>Facebook Ads</li>
+            <li>Email/SMS Marketing</li>
+            <li>Content Marketing</li>
+        </ul>
+        <a href="ads.html">
+            Advertise with Us! 
+        </a>          
+    </div>
+
+    <div class="help">
+        <a href="mailto:imodev.info@gmail.com?subject=Support%20Request&body=Please%20describe%20your%20issue%20here..">
+            <i class="fa-solid fa-headset">
+                Customer Support
+            </i>
+        </a>
+
+        <i class="fas fa-phone-volume">
+            +233554678732
+        </i>
+    </div>
+
+    <div class="legal">
+        <h3>Legal</h3>
+        <a href="legals.html">Privacy Policy</a>
+        <a href="legals.html">Terms Of Use</a>
+        <a href="legals.html">License</a>
+    </div>
+    
+    <div class="backs">
+        <div class="social">
+        <div class="s">
+            SOCIALS
+        </div>
+            <a href="https://wa.me/+233554678732"><i class="fa-brands fa-whatsapp"></i></a>
+            <a href="https://www.facebook.com/profile.php?id=100092258583707&mibextid=ZbWKwL"><i class="fa-brands fa-facebook"></i></a>
+            <a href="https://www.instagram.com/imodev1?igsh=MXN4N3B5N21xN2dpMA=="><i class="fa-brands fa-instagram"></i></a>
+            <a href="https://github.com"><i class="fa-brands fa-github"></i></a>
+        </div>
+        <div class="ft">
+            &copy; 2025 ImoDev
+        </div>
+    </div>
+</div>
+
+<script>
+    document.addEventListener('DOMContentLoaded', () => {
+        const form = document.getElementById('contact-form');
+        const formStatus = documen.getElementById('form-status');
+
+        form.addEventListener('submit', async (event) => {
+            event.preventDefault();
+
+            const formData = new FormData(form);
+
+            try {
+                const response = await fetch(form.action, {
+                    method: 'POST',
+                    body: formData,
+                    headers: {
+                        'Accept': 'application/json'
+                    }
+                });
+
+                if(response.ok){
+                    formStatus.textContent = 'Thank you for your message! we will reply soon.';
+                    formStatus.style.color = 'green';
+                    form.reset();
+                } else {
+                    formStatus.textContent = 'Oops! There was a problem your message.';
+                    formStatus.style.color = 'red';
+                }
+            } catch (error) {
+                formStatus.textContent = 'Oops! Network error occured.';
+                formStatus.style.color = 'red';
+            }
+        });
+    });
+</script>  
+<script>
+    //TOGGLE MENU
+    function toggleMenu() {
+        const navLinks = document.getElementById("navLinks");
+        const barIcon = document.getElementById("barIcon");
+        const closeIcon = document.getElementById("closeIcon");
+
+        //TOGGLE THE LINK
+        navLinks.classList.toggle("active");
+
+        //SWITCH THE ICONS
+        if(navLinks.classList.contains("active")){
+            barIcon.style.display = "none";
+            closeIcon.style.display = "block";
+        } else{
+            barIcon.style.display = "block";
+            closeIcon.style.display = "none";
+        }
+        }           
+</script>   
+
+<script>
+  let currentStep = 0;
+    const steps = document.querySelectorAll(".step");
+    const progressBar = document.getElementById("progressBar");
+    const nextBtn = document.getElementById("nextBtn");
+    const prevBtn = document.getElementById("prevBtn");
+
+    function changeStep(n) {
+        // Validation check before going forward
+        if (n === 1) {
+            const inputs = steps[currentStep].querySelectorAll("input, select, textarea");
+            for (let input of inputs) {
+                if (!input.checkValidity()) {
+                    input.reportValidity();
+                    return;
+                }
+            }
+        }
+
+        steps[currentStep].classList.remove("active");
+        currentStep += n;
+
+        if (currentStep >= steps.length) {
+            // If on last step and "Submit" clicked
+            document.getElementById("multiStepForm").submit();
+            return;
+        }
+
+        showStep(currentStep);
+    }
+
+    function showStep(n) {
+        steps[n].classList.add("active");
+        
+        // Update Buttons
+        prevBtn.disabled = (n === 0);
+        if (n === (steps.length - 1)) {
+            nextBtn.innerText = "Submit Request";
+        } else {
+            nextBtn.innerText = "Next";
+        }
+
+        // Update Progress Bar
+        const percent = ((n + 1) / steps.length) * 100;
+        progressBar.style.width = percent + "%";
+    }
+</script>
+</body>
+</html>
+
